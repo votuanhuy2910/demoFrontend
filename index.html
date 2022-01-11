@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Genshin News</title>
+</head>
+<!-- 1. Header (đầu trang)
+2. Navigation (điều hướng)
+3. Banner
+4. Breadcrumb (địa chỉ đang dừng) VD: khóa học > HTML, CSS
+5. Sidebar (menu dọc bên phải) or navigation phụ
+6. Sider (thành phần trượt VD: ảnh, video, text0)
+7. Content (ND chính)
+8. Footer (Chân trang) -->
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#banner">Character</a></li>
+                <li>
+                    <a href="#content">
+                        Land More
+                        <i class="fas fa-sort-down"></i>
+                    </a>
+                    <ul class="sub-nav">
+                        <li><a href="#monsd">Monsdstadt</a></li>
+                        <li><a href="#liyue">Liyue</a></li>
+                        <li><a href="#inazuma">Inazuma</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="icon-btn">
+                <input type="text" placeholder="Name Char" list="band-love">
+                    <datalist id="band-love">
+                        <option value="Xiao" >
+                        <option value="Zhongli" >
+                        <option value="Childe" >
+                        <option value="Ayaka" >
+                    </datalist>
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <div id="poster">
+            <video controls autoplay loop preload="auto">
+                <source src="https://genshin.mihoyo.com/_nuxt/videos/3e78e80.mp4"/>
+            </video>
+            <h1>Genshin Impact</h1>
+        </div>
+
+        <div id="banner">
+            <div class="text-content">
+                <h2 class="text-heading">Xiao</h2>
+                <div class="text-description">Hàng Ma Đại Thánh</div>
+            </div>
+        </div>
+
+        <div id="news">
+            <div class="news-content">
+                <h3>
+                    Tin Tức
+                </h3>
+            </div>
+
+            <div class="news-main">
+                <div class="news-container">
+                    <ul class="swiper-container">
+                        <li class="swiper-wrapper">
+                            <img src="https://uploadstatic-sea.mihoyo.com/contentweb/20220104/2022010417355781414.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="blog-container">
+                    <ul class="news__tab__list">
+                        <li class="news__tab__item news__tab__item--active">New</li>
+                    </ul>
+
+                    <ul class="news__list">
+                        <li>
+                            <a href="" class="news__item" 
+                                title="Genshin Impact - Thắng Cảnh Núi Tuyết, Hành Trình Ánh Sao: Sự kiện thắp sáng dãy Alps (Teaser 2)">
+                                <p class="news__title ellipsis">Genshin Impact - Thắng Cảnh Núi Tuyết, Hành Trình Ánh Sao: Sự kiện thắp sáng dãy Alps (Teaser 2)</p>
+                                <p class="news__date">09/01/2022</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="news__item"
+                                title="Chiêu mộ streamer Genshin Impact phiên bản mới trên Twitch">
+                                <p class="news__title ellipsis">Chiêu mộ streamer Genshin Impact phiên bản mới trên Twitch</p>
+                                <p class="news__date">06/01/2022</p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="" class="news__item"
+                                title="Video cốt truyện Genshin Impact - Thần Nữ Hủy Diệt">
+                                <p class="news__title ellipsis">Video cốt truyện Genshin Impact - Thần Nữ Hủy Diệt</p>
+                                <p class="news__date">06/01/2022</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="news__item" 
+                                title="[Genshin Impact] - Yun Jin: Diệu Khúc Ngọc Đài">
+                                <p class="news__title ellipsis">[Genshin Impact] - Yun Jin: Diệu Khúc Ngọc Đài</p>
+                                <p class="news__date">06/01/2022</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="news__item"
+                                title="Hướng dẫn cách chơi Nghiên Cứu Ma Dược">
+                                <p class="news__title ellipsis">Hướng dẫn cách chơi "Nghiên Cứu Ma Dược"</p>
+                                <p class="news__date">06/01/2022</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="" class="news__more">
+                        Loading More
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <ul id="city" class="content__city--list">
+                <li id="monsd" class="city__list-item">
+                    <div class="city__list-bg">
+                    </div>
+
+                    <a href="#content">
+                        <p>
+                            Monsdstadt
+                        </p>
+                    </a>
+
+                    <div class="city__list-char">
+                    </div>
+                </li>
+                <li id="liyue" class="city__list-item">
+                    <div class="city__list-bg" style="background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20200526/2020052612372361982.jpg);">
+                    </div>
+
+                    <a href="#content">
+                        <p>
+                            Liyue
+                        </p>
+                    </a>
+
+                    <div class="city__list-char" style="background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20210624/2021062410083822749.png);">
+                    </div>
+                </li>
+                <li id="inazuma" class="city__list-item">
+                    <div class="city__list-bg" style="background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20210720/2021072015230536749.jpg);">
+                    </div>
+
+                    <a href="#content">
+                        <p>
+                            Inazuma
+                        </p>
+                    </a>
+
+                    <div class="city__list-char" style="background-image: url(https://uploadstatic-sea.mihoyo.com/contentweb/20210715/2021071515201245150.png);">
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contact">
+            <header>
+                <div class="container">
+                    <h2>Contact</h2>
+                    <p>Contact Info</p>
+                </div>
+            </header>
+
+            <div class="content-contact">
+                <div class="sub-container">
+                    <form method="post" action="#" class="sub-form">
+                        <div class="row half">
+                            <div class="6u">
+                                <input type="text" class="text" placeholder="Name">
+                            </div>
+                            <div class="6u">
+                                <input type="text" class="text" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row half">
+                            <div class="12u">
+                                <textarea name="message" class="textarea" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="12u">
+                                <ul class="action">
+                                    <li>
+                                        <input type="submit" class="button" value="Post">
+                                    </li>
+                                    <li>
+                                        <input type="reset" class="button alt" value="Reset">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="sider">
+            <iframe class="sider-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6505095510843!2d106.6799987147183!3d10.761395192331703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b888ab357%3A0xc469f6e800231314!2zMjgwIEFuIEQuIFbGsMahbmcsIFBoxrDhu51uZyA0LCBRdeG6rW4gNSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1641711490545!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <img src="https://vtcpay.vn/blog/wp-content/uploads/2021/09/genshin-impact.jpg" alt="">
+        </div>
+
+        <div id="footer">
+            <div class="footer__top">
+                <div class="footer__socicalbar">
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-youtube"></i>  
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-reddit"></i>
+                    </a>
+                </div>  
+            </div>
+
+            <div class="footer__bot">
+                <div class="footer__links">
+                    <div class="logo">
+                        <img src="https://uploadstatic-sea.mihoyo.com/hk4e/upload/officialsites/202004/mihoyo_1586770772_9709.png" alt="">
+                    </div>
+
+                    <div class="logoimg">
+                        <img src="https://uploadstatic-sea.mihoyo.com/hk4e/upload/officialsites/202004/GIEN_1587984203_6764.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
