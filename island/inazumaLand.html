@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="icon" href="/assets/img/Inazuma/icon-baal.png">
+
+    <title>Inazuma Character</title>
+</head>
+<!-- 1. Header (đầu trang)
+2. Navigation (điều hướng)
+3. Banner
+4. Breadcrumb (địa chỉ đang dừng) VD: khóa học > HTML, CSS
+5. Sidebar (menu dọc bên phải) or navigation phụ
+6. Sider (thành phần trượt VD: ảnh, video, text0)
+7. Content (ND chính)
+8. Footer (Chân trang) -->
+<body>
+    <div id="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#news">News</a></li>
+                <li><a href="/index.html#banner">Character</a></li>
+                <li>
+                    <a href="/index.html#content">
+                        Land More
+                        <i class="fas fa-sort-down"></i>
+                    </a>
+                    <ul class="sub-nav">
+                        <li><a href="/island/mondstadtLand..html">Monsdstadt</a></li>
+                        <li><a href="/island/liyueLand.html">Liyue</a></li>
+                        <li><a href="">Inazuma</a></li>
+                    </ul>
+                </li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+
+            <div class="icon-btn">
+                <input type="text" placeholder="Name Char" list="band-love">
+                    <datalist id="band-love">
+                        <option value="Xiao" >
+                        <option value="Zhongli" >
+                        <option value="Childe" >
+                        <option value="Ayaka" >
+                    </datalist>
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="character__bg">
+                <img id="img" onclick="changeImage2()" src="/assets/img/Inazuma/ina.jpg">
+            </div>
+
+            <!-- <div class="character__bg">
+                <img src="./assets/img/Monds/monds1.jpg">
+            </div>     -->
+
+            <div class="character">
+                <ul class="character__sidebar">
+                    <li class="character__city sub-char">
+                        <a href="./mondstadtLand..html">Monsdstadt</a>
+                    </li>
+                    <li class="character__city sub-char">
+                        <a href="./liyueLand.html">Liyue</a>
+                    </li>
+                    <li class="character__city character__city--active">
+                        <a href="">Inazuma</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="warpper">
+                <div class="image">
+                    <img src="/assets/img/Inazuma/ayaka.png" alt="">
+                </div>
+        
+                <div class="image">
+                    <img src="/assets/img/Inazuma/baal.png" alt="">
+                </div>
+        
+                <div class="image">
+                    <img src="/assets/img/Inazuma/itto.png" alt="">
+                </div>
+        
+                <div class="image">
+                    <img src="/assets/img/Inazuma/yomiya.png" alt="">
+                </div>
+        
+                <div class="image">
+                    <img src="/assets/img/Inazuma/thoma.png" alt="">
+                </div>
+        
+                <div class="image">
+                    <img src="/assets/img/Inazuma/kazuha.png" alt="">
+                </div>
+        
+                <div class="image">
+                    <img src="/assets/img/Inazuma/sara.png" alt="">
+                </div>
+                
+                <div class="image">
+                    <img src="/assets/img/Inazuma/kokomi.png" alt="">
+                </div>
+            </div>
+        
+            <div class="gallery">
+                <i class="fas fa-times close"></i>
+                <div class="gallery__inner">
+                    <img src="/assets/img/Inazuma/ayaka.png" alt="">
+                </div>
+        
+                <div class="control prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="control next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="footer__top">
+                <div class="footer__socicalbar">
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-youtube"></i>  
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="footer__socialitem">
+                        <i class="fab fa-reddit"></i>
+                    </a>
+                </div>  
+            </div>
+
+            <!-- <div class="footer__bot">
+                <div class="footer__links">
+                    <div class="logo">
+                        <img src="https://uploadstatic-sea.mihoyo.com/hk4e/upload/officialsites/202004/mihoyo_1586770772_9709.png" alt="">
+                    </div>
+
+                    <div class="logoimg">
+                        <img src="https://uploadstatic-sea.mihoyo.com/hk4e/upload/officialsites/202004/GIEN_1587984203_6764.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <script>
+        var images = document.querySelectorAll('.image img')
+        var prev = document.querySelector('.prev')
+        var next = document.querySelector('.next')
+        var close = document.querySelector('.close')
+        var galleryImg = document.querySelector('.gallery__inner img')
+        var gallery = document.querySelector('.gallery')
+
+        var currentIndex = 0;
+        function showGallery() {
+            if(currentIndex == 0){
+                prev.classList.add('hide')
+            }
+            else {
+                prev.classList.remove('hide')
+            }
+
+            if(currentIndex == images.length - 1){
+                next.classList.add('hide')
+            }
+
+            else {
+                next.classList.remove('hide')
+            }
+
+            //display
+            galleryImg.src = images[currentIndex].src
+            gallery.classList.add('show')
+        }
+
+        images.forEach((item, index) =>{
+            item.addEventListener('click', function(){
+                currentIndex = index
+                showGallery()
+            })
+        })
+
+        close.addEventListener('click', function(){
+            gallery.classList.remove('show')
+        })
+
+        document.addEventListener('keydown', function(e){
+            if(e.keyCode == 27){
+                gallery.classList.remove('show')
+            }
+        })
+
+        prev.addEventListener('click', function(){
+            if(currentIndex > 0){
+                currentIndex--
+                showGallery()
+            }
+        })
+
+        next.addEventListener('click', function(){
+            if(currentIndex < images.length - 1){
+                currentIndex++
+                showGallery()
+            }
+        })
+    </script>
+</body>
+</html>
