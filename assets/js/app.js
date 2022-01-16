@@ -28,7 +28,7 @@
     var index1 = 1;
     changeImage1 = function(){
         var imgs1 = ["/assets/img/Liyue/liyue.jpg", "/assets/img/Liyue/liyue1.jpg" ];
-        document.getElementById('img').src = imgs1[index1];
+        document.getElementById('img1').src = imgs1[index1];
         index1++;
         if (index1 == 2){
             index1 = 0;
@@ -40,9 +40,9 @@
 
 // slider--inazuma-start
 var index2 = 1;
-changeImage1 = function(){
+changeImage2 = function(){
     var imgs2 = ["/assets/img/Inazuma/ina.jpg", "/assets/img/Inazuma/ina1.jpg" ];
-    document.getElementById('img').src = imgs2[index2];
+    document.getElementById('img2').src = imgs2[index2];
     index2++;
     if (index2 == 2){
         index2 = 0;

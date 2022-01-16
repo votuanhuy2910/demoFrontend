@@ -194,6 +194,11 @@ img {
     left: 15px;
     cursor: pointer;
 }
+.control.prev img,
+.control.next img {
+    width: 50px;
+    height: 35px;
+}
 
 .control.next {
     right: 15px;
