@@ -34,29 +34,31 @@
                         <i class="fas fa-sort-down"></i>
                     </a>
                     <ul class="sub-nav">
-                        <li><a href="/island/mondstadtLand..html">Monsdstadt</a></li>
-                        <li><a href="">Liyue</a></li>
+                        <li><a href="">Monsdstadt</a></li>
+                        <li><a href="/island/liyueLand.html">Liyue</a></li>
                         <li><a href="/island/inazumaLand.html">Inazuma</a></li>
                     </ul>
                 </li>
                 <li><a href="/index.html#contact">Contact</a></li>
             </ul>
-
-            <div class="icon-btn">
-                <input type="text" placeholder="Name Char" list="band-love">
-                    <datalist id="band-love">
-                        <option value="Xiao" >
-                        <option value="Zhongli" >
-                        <option value="Childe" >
-                        <option value="Ayaka" >
-                    </datalist>
-                <i class="fas fa-search"></i>
+            
+            <div class="nav__search-box">
+                <div class="search__box open island">
+                    <input type="text" class="search__box-input" placeholder="Search Character">
+                    <button class="search__box-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <!-- <button class="nav__login js__login">
+                    Login
+                    <i class="fas fa-user-circle"></i>
+                </button> -->
             </div>
         </div>
 
         <div class="container">
             <div class="character__bg">
-                <img id="img1" onclick="changeImage1()" src="/assets/img/Liyue/liyue.jpg">
+                <img id="img1" ondblclick="changeImage1()" src="/assets/img/Liyue/liyue.jpg">
             </div>
 
             <!-- <div class="character__bg">

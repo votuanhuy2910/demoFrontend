@@ -43,21 +43,19 @@
                 <li><a href="/index.html#contact">Contact</a></li>
             </ul>
 
-            <div class="icon-btn">
-                <input type="text" placeholder="Name Char" list="band-love">
-                    <datalist id="band-love">
-                        <option value="Xiao" >
-                        <option value="Zhongli" >
-                        <option value="Childe" >
-                        <option value="Ayaka" >
-                    </datalist>
-                <i class="fas fa-search"></i>
+            <div class="nav__search-box">
+                <div class="search__box open island">
+                    <input type="text" class="search__box-input" placeholder="Search Character">
+                    <button class="search__box-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
             </div>
         </div>
 
         <div class="container">
             <div class="character__bg">
-                <img id="img" onclick="changeImage()" src="/assets/img/Monds/mondsjpg.jpg">
+                <img id="img" ondblclick="changeImage()" src="/assets/img/Monds/mondsjpg.jpg">
             </div>
 
             <!-- <div class="character__bg">
