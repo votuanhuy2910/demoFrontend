@@ -1,3 +1,13 @@
+// search-box-start
+var btnSearch = document.querySelector('.search__box-btn')
+
+    btnSearch.addEventListener('click', function(){
+    this.parentElement.classList.toggle('open')
+    this.previousElementSibling.focus();
+})
+// search-box-end
+
+
 // banner-index-navigation-auto-start
     var counter = 1;
         setInterval(function(){
@@ -50,4 +60,24 @@ changeImage2 = function(){
 }
 setInterval(changeImage2, 5000);
 // slider--inazuma-end
+
+
+// login-start
+var loginBtn = document.querySelector('.js__login')
+var login = document.querySelector('.login')
+var loginContainer = document.querySelector('.login__container')
+var close = document.querySelector('.login__close')
+
+
+
+    loginBtn.addEventListener('click', function(){
+        login.classList.add('show')
+    })
+
+    close.addEventListener('click', function(){
+        login.classList.remove('show')
+    })
+// login-end
+
+
 

@@ -210,7 +210,3 @@ img {
     pointer-events: auto;
     transform: scale(1);
 }
-
-.hide {
-    display: none;
-}
