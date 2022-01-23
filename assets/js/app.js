@@ -56,6 +56,8 @@ setInterval(changeImage2, 5000);
 var loginBtn = document.querySelector('.js__login')
 var login = document.querySelector('.login')
 var close = document.querySelector('.login__close')
+var openRegister = document.querySelector('.register')
+var registerNow = document.querySelector('.register-now')
 
     loginBtn.addEventListener('click', function(){
         login.classList.add('show')
@@ -64,18 +66,39 @@ var close = document.querySelector('.login__close')
     close.addEventListener('click', function(){
         login.classList.remove('show')
     })
+
+    registerNow.addEventListener('click', function(){
+        openRegister.classList.add('show')
+        login.classList.remove('show')
+    })
 // login-end
 
-let searchForm = document.querySelector('.nav__search')
-var openSearch = document.querySelector('.search__form');
 
-    searchForm.addEventListener('click', function(){
-        openSearch.classList.toggle('open')
+// register-start
+var registerBtn = document.querySelector('.js__register')
+var register = document.querySelector('.register')
+var closeRegister = document.querySelector('.register__close')
+var openLogin = document.querySelector('.login')
+var returnLogin = document.querySelector('.return-login')
+
+    registerBtn.addEventListener('click', function(){
+        register.classList.add('show')
     })
 
-    // document.querySelector('#search-btn').onclick = () => {
-    //     openSearch.classList.toggle('open');
-    // }
+    closeRegister.addEventListener('click', function(){
+        register.classList.remove('show')
+    })
+
+    returnLogin.addEventListener('click', function(){
+        openLogin.classList.add('show')
+        register.classList.remove('show')
+    })
+// register-end
+
+
+
+
+
 
 
 

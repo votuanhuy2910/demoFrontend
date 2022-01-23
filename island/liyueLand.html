@@ -43,17 +43,31 @@
             </ul>
             
             <div class="nav__search-box">
-                <div class="search__box open island">
-                    <input type="text" class="search__box-input" placeholder="Search Character">
-                    <button class="search__box-btn">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
+                <button class="nav__search island" id="search-btn">
+                    <!-- Search -->
+                    <i class="fas fa-search"></i>
+                </button>
+                
+                <button class="nav__menu" id="menu-btn">
+                    <!-- Menu -->
+                    <i class="fas fa-bars"></i>
+                </button>
+
                 <!-- <button class="nav__login js__login">
                     Login
                     <i class="fas fa-user-circle"></i>
                 </button> -->
+
+                <!-- <button class="nav__register">
+                    Register
+                    <i class="fas fa-key"></i>
+                </button> -->
             </div>
+
+            <form action="" class="search__form js-search-form">
+                <input type="search" id="search-box" placeholder="Search Character...">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
         </div>
 
         <div class="container">
@@ -231,5 +245,6 @@
     </script>
 
     <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>
