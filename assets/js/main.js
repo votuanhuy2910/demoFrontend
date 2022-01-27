@@ -9,5 +9,3 @@ var openSearch = document.querySelector('.search__form');
     //     openSearch.classList.toggle('open');
     // }
 // search-box-end
-
-

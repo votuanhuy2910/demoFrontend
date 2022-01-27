@@ -80,6 +80,26 @@ html {
     color: #000;
 }
 
+#nav > li > .relax {
+    color: #40D3DC;
+}
+
+#nav > li:hover > .relax {
+    color: #5800FF;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(0deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+#nav > li > .about {
+    color: #40D3DC;
+}
+
+#nav > li:hover > .about {
+    color: #5800FF;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
 #nav li:hover .sub-nav {
     display: block;
 }
