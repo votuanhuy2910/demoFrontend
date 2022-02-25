@@ -52,24 +52,6 @@
                         <i class="fas fa-record-vinyl menu-icon"></i>
                         <span>Album</span>
                     </a>
-
-                    <!-- <ul class="sub-menu-item">
-                        <li>
-                            <a href="#" class="sub-menu-link">
-                                US-UK
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sub-menu-link">
-                                Vietnamese
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sub-menu-link">
-                                Kpop
-                            </a>
-                        </li>
-                    </ul> -->
                 </li>
             </ul>
 
@@ -86,13 +68,23 @@
                 </div>
 
                 <div class="tool">
-                    <i class="fas fa-bell tool-icon"></i>
-                    <i class="fas fa-cog tool-icon"></i>
+                    <div class="tool-icon">
+                        <i class="fas fa-bell toggle_theme"></i>
+                    </div>
+                    <div class="tool-icon">
+                        <i class="fas fa-cog toggle_theme"></i>
+                    </div>
                     <a href="#" class="upgrade">Free</a>
                 </div>
             </div>
+
+
             
             <div class="link-item">
+                <div class="toggle theme">
+                    <i class="fas fa-moon toggle_theme"></i>
+                </div>
+
                 <a href="" class="link-song bg-song">
                     Top Best Songs
                 </a>
@@ -101,15 +93,15 @@
                     US-UK Songs
                 </a>
 
-                <a href="/music/Vietnamese.html" class="link-song hover-song">
+                <a href="/music/V-pop.html" class="link-song hover-song">
                     V-Pop Songs
                 </a>
 
-                <a href="/music/Kpop.html" class="link-song hover-song">
+                <a href="/music/C-pop.html" class="link-song hover-song">
                     C-Pop Songs
                 </a>
 
-                <a href="/music/Kpop.html" class="link-song pd-song hover-song">
+                <a href="/music/K-pop.html" class="link-song pd-song hover-song">
                     K-Pop Songs
                 </a>
             </div>
@@ -431,11 +423,10 @@
 
     <script src="./assets/js/music.js"></script>
 
-
     <!-- fa-moon To fa-sun -->
 
-    <!-- <script>
-        const toggle = document.querySelector(".toggle__theme");
+    <script>
+        const toggle = document.querySelector(".toggle");
         const main = document.querySelector(".main");
 
         toggle.addEventListener("click", () => {
@@ -450,6 +441,6 @@
                 main.classList.remove("dark");
             }
         })
-    </script> -->
+    </script>
 </body>
 </html>

@@ -67,6 +67,12 @@ var registerNow = document.querySelector('.register-now')
         login.classList.remove('show')
     })
 
+    document.addEventListener('keydown', function(e){
+        if(e.keyCode == 27) {
+            login.classList.remove('show')
+        }
+    })
+
     registerNow.addEventListener('click', function(){
         openRegister.classList.add('show')
         login.classList.remove('show')
@@ -87,6 +93,12 @@ var returnLogin = document.querySelector('.return-login')
 
     closeRegister.addEventListener('click', function(){
         register.classList.remove('show')
+    })
+
+    document.addEventListener('keydown', function(e){
+        if(e.keyCode == 27) {
+            register.classList.remove('show')
+        }
     })
 
     returnLogin.addEventListener('click', function(){

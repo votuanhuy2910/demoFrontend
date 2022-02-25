@@ -924,7 +924,6 @@ html {
     display: none;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: loginFadeIn ease 0.5s;
 }
 
 .login__container {

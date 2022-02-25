@@ -93,6 +93,9 @@
             </div>
             
             <div class="link-item">
+                <div class="toggle theme">
+                    <i class="fas fa-moon toggle_theme"></i>
+                </div>
                 <a href="/music.html" class="link-song hover-song">
                     Top Best Songs
                 </a>
@@ -575,8 +578,27 @@
         });
 
         songList.forEach((el) => el.addEventListener("click", handleClickEachSong));
-
     </script>
+
+    <script>
+        const toggle = document.querySelector(".toggle");
+        const main = document.querySelector(".main");
+
+        toggle.addEventListener("click", () => {
+            let theme = toggle.querySelector(".fas");
+            if (theme.classList.contains("fa-moon")) {
+                theme.classList.remove("fa-moon");
+                theme.classList.add("fa-sun");
+                main.classList.add("dark");
+            } else {
+                theme.classList.remove("fa-sun");
+                theme.classList.add("fa-moon");
+                main.classList.remove("dark");
+            }
+        })
+    </script>
+
+    
 
 
     <!-- fa-moon To fa-sun -->
