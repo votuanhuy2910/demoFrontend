@@ -14,17 +14,21 @@ const progressBar = document.querySelector("#progress-bar");
 let songIndex = 0;
 
 let songs = [
-    "/assets/files/WBH.mp3",
-    "/assets/files/Cheap Thrills.mp3",
-    "/assets/files/Faded.mp3",
-    "/assets/files/See you again.mp3",
-    "/assets/files/Best Song Ever.mp3",
-    "/assets/files/In The End.mp3",
-    "/assets/files/I Do.mp3",
-    "/assets/files/Alone.mp3",
-    "/assets/files/Something Just Like This.mp3",
-    "/assets/files/What Makes You Beautiful.mp3",
-    "/assets/files/Unstoppable.mp3",
+    "/assets/files/HQ/WBH.mp3",
+    "/assets/files/US-UK/Cheap Thrills.mp3",
+    "/assets/files/US-UK/Faded.mp3",
+    "/assets/files/US-UK/See you again.mp3",
+    "/assets/files/US-UK/Best Song Ever.mp3",
+    "/assets/files/VN/Giua Dai Lo Dong Tay.mp3",
+    "/assets/files/US-UK/In The End.mp3",
+    "/assets/files/US-UK/I Do.mp3",
+    "/assets/files/US-UK/Alone.mp3",
+    "/assets/files/VN/Ke Theo Duoi Anh Sang.mp3",
+    "/assets/files/US-UK/Something Just Like This.mp3",
+    "/assets/files/US-UK/What Makes You Beautiful.mp3",
+    "/assets/files/VN/Noi Nay Co Anh.mp3",
+    "/assets/files/VN/Thai Binh Mo Hoi Roi.mp3",
+    "/assets/files/US-UK/Unstoppable.mp3",
 ];
 
 let thumbnails = [
@@ -33,19 +37,26 @@ let thumbnails = [
     "https://giaingo.info/wp-content/uploads/2021/05/faded-la-gi-3-e1620443561356.jpg?ezimgfmt=rs:368x207/rscb1/ng:webp/ngcb1",
     "https://amatrendy.net/cdn/files/see-you-again---wiz-khalifa-charlie-puth.jpg",
     "https://i1.sndcdn.com/artworks-000144372998-i6pk8u-t500x500.jpg",
+    "https://i.ytimg.com/vi/HF3p1GeQilI/sddefault.jpg",
     "https://avatar-ex-swe.nixcdn.com/song/2019/04/02/9/b/0/c/1554206099536_640.jpg",
     "https://img.youtube.com/vi/O6mizTWwmTQ/hqdefault.jpg",
     "https://media.distractify.com/brand-img/yRHjW-rvf/0x0/alone-1628798955381.jpg",
+    "https://i.scdn.co/image/ab67616d0000b2736e26ad2d7d6f55de27298783",
     "https://i1.sndcdn.com/artworks-000464148666-wd4snm-t500x500.jpg",
     "https://upload.wikimedia.org/wikipedia/vi/c/c7/One_Direction_-_What_Makes_You_Beautiful.jpg",
+    "https://upload.wikimedia.org/wikipedia/vi/1/1d/N%C6%A1i_n%C3%A0y_c%C3%B3_anh_-_Single_Cover.jpg",
+    "https://i.ytimg.com/vi/5Jm9g0YdGDU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDsp5xdgNfB-4v4lamdtJzG7fEN8A",
     "https://www.voca.vn/assets/img/news/loi-dich-bai-hat-unstoppable1611308172.jpeg",
 ];
 
 let songArtists = ["Shaun", "Sia ft Sean Paul", "Alan Walker", "Wiz Khalifa ft Charlie Puthn",
-    "One Direction", "Linkin Park", "911 Band", "Alan Walker", "The Chainsmokers", "One Direction", "Sia"
+    "One Direction", "Uyên Linh", "Linkin Park", "911 Band", "Alan Walker", "Huy Vạc", "The Chainsmokers",
+    "One Direction", "Sơn Tùng M-TP", "Sơn Tùng M-TP", "Sia"
     ];
 let songTitles = ["Way Back Home", "Cheap Thrills", "Faded", "See You Again",
-    "Best Song Ever", "In The End", "I Do", "Alone", "Somethings Just Like This", "What Makes You Beautiful", "Unstoppable"
+    "Best Song Ever", "Giữa Đại Lộ Đông Tây", "In The End", "I Do", "Alone", "Kẻ Theo Đuổi Ánh Sáng",
+    "Somethings Just Like This", "What Makes You Beautiful", "Nơi Này Có Anh",
+    "Thái Bình Mồ Hôi Rơi", "Unstoppable"
     ];
 function handleClickEachSong(e) {
     const index = parseInt(e.target.dataset.index);
