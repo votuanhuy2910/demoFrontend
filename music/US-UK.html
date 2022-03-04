@@ -15,7 +15,7 @@
     <div class="warpper">
         <div class="sidebar">
             <div class="profile">
-                <a href="#">
+                <a href="">
                     <img src="/assets/img/logo2.png" alt="" class="profile-img">
                 </a>
                 <h3 class="profile-title">Vo Tuan Huy</h3>
@@ -52,24 +52,9 @@
                         <i class="fas fa-record-vinyl menu-icon"></i>
                         <span>Album</span>
                     </a>
-
-                    <!-- <ul class="sub-menu-item">
-                        <li>
-                            <a href="" class="sub-menu-link">
-                                US-UK
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sub-menu-link">
-                                Vietnamese
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="sub-menu-link">
-                                Kpop
-                            </a>
-                        </li>
-                    </ul> -->
+                    <div class="toggle theme">
+                        <i class="fas fa-moon toggle_theme"></i>
+                    </div>
                 </li>
             </ul>
 
@@ -93,9 +78,6 @@
             </div>
             
             <div class="link-item">
-                <div class="toggle theme">
-                    <i class="fas fa-moon toggle_theme"></i>
-                </div>
                 <a href="/music.html" class="link-song hover-song">
                     Top Best Songs
                 </a>
@@ -228,6 +210,42 @@
                     <h3 class="billboard-title title">What Makes You Beautiful</h3>
                     <a href="#" class="billboard-author author">One Direction</a>
                 </div>
+
+                <div class="billboard-item">
+                    <div class="billboard-media">
+                        <img src="https://globalcastingresources.com/wp-content/uploads/2018/12/image3-3-678x381.jpg" 
+                        alt="billboard image" class="billboard-img">
+
+                        <img src="https://globalcastingresources.com/wp-content/uploads/2018/12/image3-3-678x381.jpg" 
+                        alt="billboard image" class="billboard-img-shadow">
+                    </div>
+                    <h3 class="billboard-title title">That Girl</h3>
+                    <a href="#" class="billboard-author author">Olly Murs</a>
+                </div>
+
+                <div class="billboard-item">
+                    <div class="billboard-media">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZGI0MWI2OTYtZTZiMC00OThhLWI4MjUtMGFjMTU2N2Q1NDNkL2ltYWdlXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg" 
+                        alt="billboard image" class="billboard-img">
+
+                        <img src="https://m.media-amazon.com/images/M/MV5BZGI0MWI2OTYtZTZiMC00OThhLWI4MjUtMGFjMTU2N2Q1NDNkL2ltYWdlXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg" 
+                        alt="billboard image" class="billboard-img-shadow">
+                    </div>
+                    <h3 class="billboard-title title">Centuries</h3>
+                    <a href="#" class="billboard-author author">Fall Out Boy</a>
+                </div>
+
+                <div class="billboard-item">
+                    <div class="billboard-media">
+                        <img src="https://bhavyasm.files.wordpress.com/2018/07/download.jpg?crop" 
+                        alt="billboard image" class="billboard-img">
+
+                        <img src="https://bhavyasm.files.wordpress.com/2018/07/download.jpg?crop" 
+                        alt="billboard image" class="billboard-img-shadow">
+                    </div>
+                    <h3 class="billboard-title title">Numb</h3>
+                    <a href="#" class="billboard-author author">Linkin Park</a>
+                </div>
             </div>
 
             <div class="content" id="content">
@@ -245,10 +263,10 @@
                             <h4 class="song-title">Cheap Thrills</h4>
                             <h5 class="song-album">Sia ft Sean Paul</h5>
                             <time class="song-time">4:05</time>
-                            <lable for="love1" class="song-love">
-                                <input type="checkbox" name="love" id="love1">
+                            <label for="love" class="song-love">
+                                <input type="checkbox" name="love" id="love">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="1">
@@ -258,10 +276,10 @@
                             <h4 class="song-title">Faded</h4>
                             <h5 class="song-album">Alan Walker</h5>
                             <time class="song-time">3:32</time>
-                            <lable for="love2" class="song-love">
-                                <input type="checkbox" name="love" id="love2">
+                            <label for="love1" class="song-love">
+                                <input type="checkbox" name="love" id="love1">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="2">
@@ -271,10 +289,10 @@
                             <h4 class="song-title">See You Again</h4>
                             <h5 class="song-album">Wiz Khalifa ft Charlie Puthn</h5>
                             <time class="song-time">3:57</time>
-                            <lable for="love3" class="song-love">
-                                <input type="checkbox" name="love" id="love3">
+                            <label for="love2" class="song-love">
+                                <input type="checkbox" name="love" id="love2">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="3">
@@ -284,10 +302,10 @@
                             <h4 class="song-title">Best Song Ever</h4>
                             <h5 class="song-album">One Direction</h5>
                             <time class="song-time">3:18</time>
-                            <lable for="love4" class="song-love">
-                                <input type="checkbox" name="love" id="love4">
+                            <label for="love3" class="song-love">
+                                <input type="checkbox" name="love" id="love3">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="4">
@@ -297,10 +315,10 @@
                             <h4 class="song-title">In The End</h4>
                             <h5 class="song-album">Linkin Park</h5>
                             <time class="song-time">3:38</time>
-                            <lable for="love5" class="song-love">
-                                <input type="checkbox" name="love" id="love5">
+                            <label for="love4" class="song-love">
+                                <input type="checkbox" name="love" id="love4">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="5">
@@ -310,10 +328,10 @@
                             <h4 class="song-title">I Do</h4>
                             <h5 class="song-album">911 Band</h5>
                             <time class="song-time">3:21</time>
-                            <lable for="love6" class="song-love">
-                                <input type="checkbox" name="love" id="love6">
+                            <label for="love5" class="song-love">
+                                <input type="checkbox" name="love" id="love5">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="6">
@@ -323,10 +341,10 @@
                             <h4 class="song-title">Alone</h4>
                             <h5 class="song-album">Alan Walker</h5>
                             <time class="song-time">2:43</time>
-                            <lable for="love7" class="song-love">
-                                <input type="checkbox" name="love" id="love7">
+                            <label for="love6" class="song-love">
+                                <input type="checkbox" name="love" id="love6">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="7">
@@ -336,10 +354,10 @@
                             <h4 class="song-title">Somethings Just Like This</h4>
                             <h5 class="song-album">The Chainsmokers</h5>
                             <time class="song-time">4:07</time>
-                            <lable for="love8" class="song-love">
-                                <input type="checkbox" name="love" id="love8">
+                            <label for="love7" class="song-love">
+                                <input type="checkbox" name="love" id="love7">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="8">
@@ -349,10 +367,10 @@
                             <h4 class="song-title">What Makes You Beautiful</h4>
                             <h5 class="song-album">One Direction</h5>
                             <time class="song-time">3:27</time>
-                            <lable for="love9" class="song-love">
-                                <input type="checkbox" name="love" id="love9">
+                            <label for="love8" class="song-love">
+                                <input type="checkbox" name="love" id="love8">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
                         </div>
 
                         <div class="song" data-index="9">
@@ -362,10 +380,49 @@
                             <h4 class="song-title">Unstoppable</h4>
                             <h5 class="song-album">Sia</h5>
                             <time class="song-time">3:39</time>
-                            <lable for="love10" class="song-love">
+                            <label for="love9" class="song-love">
+                                <input type="checkbox" name="love" id="love9">
+                                <i class="fas fa-heart song-heart"></i>
+                            </label>
+                        </div>
+
+                        <div class="song" data-index="10">
+                            <span class="song-index">11</span>
+                            <img src="https://globalcastingresources.com/wp-content/uploads/2018/12/image3-3-678x381.jpg" alt="" class="song-img">
+                            <i class="fas fa-play song-play"></i>
+                            <h4 class="song-title">That Girl</h4>
+                            <h5 class="song-album">Olly Murs</h5>
+                            <time class="song-time">2:67</time>
+                            <label for="love10" class="song-love">
                                 <input type="checkbox" name="love" id="love10">
                                 <i class="fas fa-heart song-heart"></i>
-                            </lable>
+                            </label>
+                        </div>
+
+                        <div class="song" data-index="11">
+                            <span class="song-index">12</span>
+                            <img src="https://m.media-amazon.com/images/M/MV5BZGI0MWI2OTYtZTZiMC00OThhLWI4MjUtMGFjMTU2N2Q1NDNkL2ltYWdlXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg" alt="" class="song-img">
+                            <i class="fas fa-play song-play"></i>
+                            <h4 class="song-title">Centuries</h4>
+                            <h5 class="song-album">Fall Out Boy</h5>
+                            <time class="song-time">3:46</time>
+                            <label for="love11" class="song-love">
+                                <input type="checkbox" name="love" id="love11">
+                                <i class="fas fa-heart song-heart"></i>
+                            </label>
+                        </div>
+
+                        <div class="song" data-index="12">
+                            <span class="song-index">13</span>
+                            <img src="https://bhavyasm.files.wordpress.com/2018/07/download.jpg?crop" alt="" class="song-img">
+                            <i class="fas fa-play song-play"></i>
+                            <h4 class="song-title">Numb</h4>
+                            <h5 class="song-album">Linkin Park</h5>
+                            <time class="song-time">3:06</time>
+                            <label for="love12" class="song-love">
+                                <input type="checkbox" name="love" id="love12">
+                                <i class="fas fa-heart song-heart"></i>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -433,6 +490,9 @@
             "/assets/files/US-UK/Something Just Like This.mp3",
             "/assets/files/US-UK/What Makes You Beautiful.mp3",
             "/assets/files/US-UK/Unstoppable.mp3",
+            "/assets/files/US-UK/That Girl - Olly Murs.mp3",
+            "/assets/files/US-UK/Centuries - Fall Out Boy.mp3",
+            "/assets/files/US-UK/numb.mp3",
         ];
 
         let thumbnails = [
@@ -446,13 +506,18 @@
             "https://i1.sndcdn.com/artworks-000464148666-wd4snm-t500x500.jpg",
             "https://upload.wikimedia.org/wikipedia/vi/c/c7/One_Direction_-_What_Makes_You_Beautiful.jpg",
             "https://www.voca.vn/assets/img/news/loi-dich-bai-hat-unstoppable1611308172.jpeg",
+            "https://globalcastingresources.com/wp-content/uploads/2018/12/image3-3-678x381.jpg",
+            "https://m.media-amazon.com/images/M/MV5BZGI0MWI2OTYtZTZiMC00OThhLWI4MjUtMGFjMTU2N2Q1NDNkL2ltYWdlXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg",
+            "https://bhavyasm.files.wordpress.com/2018/07/download.jpg?crop",
         ];
 
         let songArtists = ["Sia ft Sean Paul", "Alan Walker", "Wiz Khalifa ft Charlie Puthn",
-            "One Direction", "Linkin Park", "911 Band", "Alan Walker", "The Chainsmokers", "One Direction", "Sia"
+            "One Direction", "Linkin Park", "911 Band", "Alan Walker", "The Chainsmokers",
+            "One Direction", "Sia", "Olly Murs", "Fall Out Boy", "Linkin Park"
             ];
         let songTitles = ["Cheap Thrills", "Faded", "See You Again",
-            "Best Song Ever", "In The End", "I Do", "Alone", "Somethings Just Like This", "What Makes You Beautiful", "Unstoppable"
+            "Best Song Ever", "In The End", "I Do", "Alone", "Somethings Just Like This", 
+            "What Makes You Beautiful", "Unstoppable", "That Girl", "Centuries", "Numb"
             ];
         function handleClickEachSong(e) {
             const index = parseInt(e.target.dataset.index);

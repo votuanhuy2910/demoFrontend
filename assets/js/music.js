@@ -29,6 +29,16 @@ let songs = [
     "/assets/files/VN/Noi Nay Co Anh.mp3",
     "/assets/files/VN/Thai Binh Mo Hoi Roi.mp3",
     "/assets/files/US-UK/Unstoppable.mp3",
+    "/assets/files/HQ/Jam-Jam-IU.mp3",
+    "/assets/files/VN/Mascara.mp3",
+    "/assets/files/VN/Yeu Xa.mp3",
+    "assets/files/TQ/Thuy trieu.mp3",
+    "/assets/files/TQ/que boi.mp3",
+    "/assets/files/HQ/Stand By Me - SHINee.mp3",
+    "/assets/files/US-UK/That Girl - Olly Murs.mp3",
+    "/assets/files/US-UK/Centuries - Fall Out Boy.mp3",
+    "/assets/files/TQ/xich linh.mp3",
+    "/assets/files/TQ/1 Trieu kha nang.mp3",
 ];
 
 let thumbnails = [
@@ -47,16 +57,28 @@ let thumbnails = [
     "https://upload.wikimedia.org/wikipedia/vi/1/1d/N%C6%A1i_n%C3%A0y_c%C3%B3_anh_-_Single_Cover.jpg",
     "https://i.ytimg.com/vi/5Jm9g0YdGDU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDsp5xdgNfB-4v4lamdtJzG7fEN8A",
     "https://www.voca.vn/assets/img/news/loi-dich-bai-hat-unstoppable1611308172.jpeg",
+    "https://i.ytimg.com/vi/GbwWu4pLjS8/maxresdefault.jpg",
+    "https://avatar-ex-swe.nixcdn.com/song/2019/12/25/6/3/c/6/1577268566289_640.jpg",
+    "https://avatar-ex-swe.nixcdn.com/playlist/2014/06/20/c/1/8/7/1403247530512_500.jpg",
+    "https://i.ytimg.com/vi/oF9QlzAnimM/sddefault.jpg",
+    "https://i.ytimg.com/vi/1ZkpLF8QJQk/maxresdefault.jpg",
+    "https://img.youtube.com/vi/carGo3oLoiA/0.jpg",
+    "https://globalcastingresources.com/wp-content/uploads/2018/12/image3-3-678x381.jpg",
+    "https://m.media-amazon.com/images/M/MV5BZGI0MWI2OTYtZTZiMC00OThhLWI4MjUtMGFjMTU2N2Q1NDNkL2ltYWdlXkEyXkFqcGdeQXVyNDQ5MDYzMTk@._V1_.jpg",
+    "https://avatar-ex-swe.nixcdn.com/song/2019/08/19/d/e/0/d/1566147959020_640.jpg",
+    "https://i.ytimg.com/vi/HnxnTCywuL8/hqdefault.jpg",
 ];
 
 let songArtists = ["Shaun", "Sia ft Sean Paul", "Alan Walker", "Wiz Khalifa ft Charlie Puthn",
     "One Direction", "Uyên Linh", "Linkin Park", "911 Band", "Alan Walker", "Huy Vạc", "The Chainsmokers",
-    "One Direction", "Sơn Tùng M-TP", "Sơn Tùng M-TP", "Sia"
+    "One Direction", "Sơn Tùng M-TP", "Sơn Tùng M-TP", "Sia", "IU", "Chillies", "Vũ Cát Tường", "Phó Mộng Đồng",
+    "Thôi Tử Cách", "SHINee", "Olly Murs", "Fall Out Boy", "Chấp Tố Hề", "Christine Welch"
     ];
 let songTitles = ["Way Back Home", "Cheap Thrills", "Faded", "See You Again",
     "Best Song Ever", "Giữa Đại Lộ Đông Tây", "In The End", "I Do", "Alone", "Kẻ Theo Đuổi Ánh Sáng",
-    "Somethings Just Like This", "What Makes You Beautiful", "Nơi Này Có Anh",
-    "Thái Bình Mồ Hôi Rơi", "Unstoppable"
+    "Somethings Just Like This", "What Makes You Beautiful", "Nơi Này Có Anh", "Thái Bình Mồ Hôi Rơi",
+    "Unstoppable", "Jam Jam", "Mascara", "Yêu Xa", "Thủy Triều", "Quẻ Bói", "Stand By Me", "That Girl",
+    "Centuries", "Xích Linh", "Một Triệu Khả Năng"
     ];
 function handleClickEachSong(e) {
     const index = parseInt(e.target.dataset.index);

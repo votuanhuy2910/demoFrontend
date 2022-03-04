@@ -124,12 +124,12 @@ body {
 .profile-footer {
     position: sticky;
     position: -webkit-sticky;
-    top: 425px;
+    top: 460px;
 }
 
 .profile-footer-img {
-    margin-top: 50px;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .profile-title {
@@ -276,7 +276,10 @@ body {
 }
 
 .toggle.theme {
-    margin-right: 10px;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    margin-right: 20px;
 }
 
 .tool-icon:hover {
@@ -564,6 +567,8 @@ body {
 
 .main.dark .player {
     background-color: #303234;
+    box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.7), 
+    -2px -2px 2px 0px rgba(255, 255, 255, 0.7);
 }
 
 .player-box {
@@ -712,6 +717,10 @@ body {
         border-radius: 0;
     }
 
+    .link-item {
+        position: unset;
+    }
+
     .menu {
         position: unset;
         /* display: none; */
@@ -756,6 +765,10 @@ body {
 
     .toggle.theme {
         margin-top: 10px;
+    }
+
+    .link-item {
+        position: unset;
     }
 
     .billboard-list {
@@ -836,6 +849,29 @@ body {
     .toggle_theme {
         font-size: 22px;
     }
+
+    .link-item {
+        position: unset;
+    }
+
+    .song-list {
+    padding: 10px;
+    max-height: 420px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.song-list::-webkit-scrollbar {
+    /* display: none; */
+    background-color: #FAACA8;
+    background-image: linear-gradient(160deg, #FAACA8 0%, #DDD6F3 50%, #89d2ca 89%);
+}
+
+.song-list::-webkit-scrollbar-thumb {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+}
 }
 
 @media screen  and (max-width: 723px) {
