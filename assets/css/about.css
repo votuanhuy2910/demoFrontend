@@ -262,10 +262,12 @@ html {
     font-size: 25px;
 }
 
+.link-icon .fa-blog,
 .link-icon .fa-github {
     color: var(--icon-github);
 }
 
+.app.dark .link-icon .fa-blog,
 .app.dark .link-icon .fa-tiktok,
 .app.dark .link-icon .fa-github {
     color: var(--bg-main);
@@ -278,14 +280,20 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
-.link-icon .fa-google {
+/* .link-icon .fa-google {
     background: radial-gradient(circle at 30% 107%, #2dce76 30%, #285aeb 55%, #fdf497 60%, #ee3727 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+
+.link-icon .fa-discord {
+    background: radial-gradient(circle at 100% 50%, #d6249f 15%, #5526cc 65%, #5596a0 75%, #2798df 105%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.link-icon .fa-discord {
-    background: radial-gradient(circle at 100% 50%, #d6249f 15%, #5526cc 65%, #5596a0 75%, #2798df 105%);
+.link-icon .fa-graduation-cap {
+    background: radial-gradient(circle at 30% 17%, #90e289 10%, #0e7f98 45%, #3adadd 80%, #285aeb 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -476,6 +484,7 @@ html {
 .card__back--item {
     width: 110px;
     height: 50px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -491,6 +500,10 @@ html {
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     cursor: pointer;
+}
+
+.card__back--item.sub {
+    margin-left: 20px;
 }
 
 .app.dark .card__back--item {
