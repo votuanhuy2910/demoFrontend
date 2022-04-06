@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 
 :root {
     --yellow:#5EE6EB;
@@ -12,7 +13,6 @@
 }
 
 * {
-    font-family:'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,6 +48,7 @@ html {
 }
 
 body {
+    font-family:'Rubik', sans-serif;
     overflow: hidden;
     transition: .2s linear !important;
 }
@@ -326,11 +327,22 @@ section {
 
 .home .content .current-time {
     padding-bottom: 15rem;
+    border-radius: 5px;
+    margin: 5px 70px;
+    box-shadow: 0px 0px 6px 2px #d9d6d5;
+    border: var(--border-bold);
+    transition: .2s all linear;
+}
+
+.main.dark .home .content .current-time {
+    border: var(--border-bold-dark);
+    box-shadow: -6px -6px 6px -1px rgba(0, 0, 0, 0.15),
+    6px 6px 6px -1px rgba(255, 255, 255, 0.7);
 }
 
 .current-time h1 {
     font-size: 22px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 .main.dark .current-time #date b,
@@ -346,6 +358,7 @@ section {
     color: #333;
 }
 .content #hvn {
+    font-family:'Orbitron', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,34 +367,50 @@ section {
 .content #hvn div {
     position: relative;
     margin: 0 5px;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, #0004);
+    -webkit-box-reflect: below 10px linear-gradient(transparent, #0008);
 }
 
 .content #hvn div span {
     position: relative;
     display: block;
+    font-size: 1.2rem;
     font-weight: 300;
-    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background: #f2f4ff;
+    box-shadow: -6px -6px 6px -1px rgba(0, 0, 0, 0.15),
+    6px 6px 6px -1px rgba(255, 255, 255, 0.7);
     z-index: 3;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+}
+
+.main.dark .content #hvn div span {
+    background: var(--black);
+    color: var(--white);
 }
 
 .content #hvn span:nth-child(1) {
-    height: 5rem;
-    font-size: 2rem;
+    height: 4rem;
+    font-size: 1.6rem;
     letter-spacing: 0.3rem;
     z-index: 2;
     box-shadow: none;
-    background:#90dbf4;
+    background:#f2f4ff;
     text-transform: uppercase;
+    box-shadow: -6px -6px 6px -1px rgba(0, 0, 0, 0.15),
+    6px 6px 6px -1px rgba(255, 255, 255, 0.7);
 }
 
 .content #hvn div:last-child span {
-    background: #41cada;
+    background: #f2f4ff;
 }
 
 .content #hvn div:last-child span:nth-child(1) {
-    background: #8ecae6;
+    background: #f2f4ff;
+}
+
+.main.dark .content #hvn div:last-child span:nth-child(1) {
+    background: var(--black);
 }
 
 .home .content h3 {
@@ -390,7 +419,7 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.home .content span {
+.home .content > span {
     display: inline-block;
     padding: 1rem 2rem;
     background-color: var(--yellow);

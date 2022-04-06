@@ -66,6 +66,9 @@
                             <div>
                                 <span id="sec">00</span><span>Sec</span>
                             </div>
+                            <div>
+                                <span id="am_pm">AM</span>
+                            </div>
                         </div>
                     </div>
         
@@ -370,14 +373,25 @@
             var hour = document.getElementById("hour");
             var min = document.getElementById("min");
             var sec = document.getElementById("sec");
+            var am_pm = document.getElementById("am_pm");
 
             var Hour_current = new Date().getHours();
             var Min_current = new Date().getMinutes();
             var Sec_current = new Date().getSeconds();
 
+            var convert_am_pm;
+            convert_am_pm = hour > 12 ? "AM" : "PM";
+            hour = hour > 12 ? hour - 12 : hour;
+            hour = hour == 0 ? hour = 12 : hour;
+
+            Hour_current = Hour_current < 10 ? "0" + Hour_current : Hour_current;
+            Min_current = Min_current < 10 ? "0" + Min_current : Min_current;
+            Sec_current = Sec_current < 10 ? "0" + Sec_current : Sec_current;
+
             hour.innerHTML = Hour_current;
             min.innerHTML = Min_current;
             sec.innerHTML = Sec_current;
+            am_pm.innerHTML = convert_am_pm;
         }
 
         var Count_time = setInterval(Clock, 1000);

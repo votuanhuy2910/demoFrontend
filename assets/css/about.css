@@ -51,7 +51,7 @@ html {
     --icon-insta: #FB3958;
     --icon-github: #333;
     --icon-youtube: #FF0000;
-    --icon-tiktok: #000;
+    --icon-forum: #000;
 }
 
 .app {
@@ -268,7 +268,7 @@ html {
 }
 
 .app.dark .link-icon .fa-blog,
-.app.dark .link-icon .fa-tiktok,
+.app.dark .link-icon .fa-comments,
 .app.dark .link-icon .fa-github {
     color: var(--bg-main);
 }
@@ -298,8 +298,14 @@ html {
     -webkit-text-fill-color: transparent;
 }
 
-.link-icon .fa-tiktok {
-    color: var(--icon-tiktok);
+.link-icon .fa-comments {
+    background: radial-gradient(circle at 30% 17%, #2196cc 46%, #c8a25a 30%, #d1843c 80%, #e98b33 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link-icon .fa-comments {
+    color: var(--icon-forum);
 }
 
 .toggle {
